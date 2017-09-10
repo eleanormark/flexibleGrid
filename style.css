@@ -33,6 +33,7 @@
     width: 50%;
   }
 }
+
 @media screen and (min-width: 720px) {
   .test .testcol {
     width: 25%;
