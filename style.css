@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.test {
+  border: 1px solid #000;
+  border-bottom: 0;
+  border-right: 0;
+  border-collapse: collapse;
+}
+.test::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.test .testcol {
+  display: table-cell;
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+@media screen and (min-width: 0px) {
+  .test .testcol {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .test .testcol {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .test .testcol {
+    width: 25%;
+  }
+}
